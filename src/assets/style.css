@@ -1,0 +1,119 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f9fa;
+  color: #1f2937;
+}
+
+/* Navbar */
+.navbar {
+  background: linear-gradient(to right, #4f46e5, #7c3aed) !important;
+}
+
+/* Hero Section */
+.hero {
+  height: 80vh;
+  background: linear-gradient(to right, #4f46e5, #7c3aed);
+  color: white;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #4f46e5;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #4338ca;
+}
+
+/* Default card (for light background pages like About) */
+.card {
+  background: white;
+  color: #1f2937;
+  border-radius: 15px;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+/* Glass effect ONLY when inside hero section */
+.hero .card {
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+
+/* Hover Effect */
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+
+}
+
+/* Section headings */
+h1, h2, h3 {
+  font-weight: 600;
+}
+
+/* Footer */
+footer {
+  background-color: #1f2937;
+}
+
+/* Navbar link styling */
+.nav-link {
+  position: relative;
+  color: white !important;
+  transition: color 0.3s ease;
+}
+
+/* Underline effect */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+/* Hover animation */
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Active link underline */
+.nav-link.active::after {
+  width: 100%;
+}
+
+/* Normal card text */
+.card h4,
+.card h5 {
+  color: #1f2937;
+}
+
+.card p {
+  color: #6b7280;
+}
+
+/* Hero cards only */
+.hero .card h4,
+.hero .card h5,
+.hero .card p {
+  color: #ffffff;
+}
+
+/* Default card text (for light background like About page) */
+.card p {
+  color: #6b7280;   /* medium gray (visible) */
+}
+
+/* Glass section text (only for hero background) */
+.hero .card p {
+  color: #e5e7eb;   /* light color for dark bg */
+}
